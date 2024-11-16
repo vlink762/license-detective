@@ -1,0 +1,20 @@
+            - name: Meterian Scanner
+  # You may pin to the exact commit or the version.
+  # uses: MeterianHQ/meterian-github-action@6849965b713613691cd357967671da061d968f83
+  uses: MeterianHQ/meterian-github-action@v1.0.17
+  with:
+    # Meterian client parameters.
+    cli_args: # optional
+    # Open Source Software flag to instruct the client to avoid authenticating the scan as the project being scanned is open source.
+    oss: # optional
+    # What strategy to use to update vulnerable dependencies
+    autofix_security: # optional
+    # What strategy to use to update outdated dependencies
+    autofix_stability: # optional
+    # Flag to instruct the action on whether a pull request should be opened as a result of the autofix
+    autofix_with_pr: # optional
+    # Flag to instruct the action on whether an issue should be opened as a result of the autofix
+    autofix_with_issue: # optional
+    # Flag to instruct the action on whether a pull request also including a PDF report should be opened as a result of the autofix
+    autofix_with_report: # optional
+          
